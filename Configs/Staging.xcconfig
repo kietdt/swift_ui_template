@@ -1,0 +1,9 @@
+#include "Base.xcconfig"
+
+APP_ENVIRONMENT = staging
+APP_DISPLAY_NAME = $(APP_NAME) Stg
+BUNDLE_ID_SUFFIX = .stg
+
+// `//` starts a comment in .xcconfig files, so the URL is split with $().
+// Replace with this environment's backend.
+API_BASE_URL = https:/$()/dummyjson.com

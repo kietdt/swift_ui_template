@@ -1,0 +1,9 @@
+// Settings shared by every environment. Environment files include this one.
+// `scripts/rename.sh` rewrites APP_NAME and BASE_BUNDLE_IDENTIFIER.
+
+APP_NAME = Template
+BASE_BUNDLE_IDENTIFIER = com.app.opt.swift-ui-template
+
+PRODUCT_BUNDLE_IDENTIFIER = $(BASE_BUNDLE_IDENTIFIER)$(BUNDLE_ID_SUFFIX)
+INFOPLIST_FILE = Configs/Info.plist
+INFOPLIST_KEY_CFBundleDisplayName = $(APP_DISPLAY_NAME)
